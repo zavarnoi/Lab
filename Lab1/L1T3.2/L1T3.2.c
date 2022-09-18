@@ -19,8 +19,13 @@ int main()
 		return 0;
 	}
 
-	if (a*sqrtl(2) >= 2 * r)
-		printf("square not fit in a circle");
-	else if (a * sqrtl(2) <= 2 * r)
-		printf("square fit in a circle");
+	if (a*sqrtl(2) > 2 * r)
+		printf("square not fit in a circle\n");
+	else 
+		printf("square fit in a circle\n");
+
+	if (a >= 2 * r)
+		printf("circle fit in a square\n");
+	else 
+		printf("circle not fit in a square\n");
 }
